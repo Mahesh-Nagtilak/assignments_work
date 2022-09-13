@@ -357,3 +357,4 @@ This generated password is for development use only. Your security configuration
     <td>male</td>
     <td>B-9</td>
 </tr></table>
+2022-09-13 22:57:15.056  INFO 17340 --- [http-nio-8091-exec-7] c.c.flight.controllers.UserController    : User Details Suceesfully Updated id:1
