@@ -1,0 +1,25 @@
+#Login-div {
+ background-image: url("https://d3d5bpai12ti8.cloudfront.net/wp-content/uploads/20190325163617/airplane-flight-sunset.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+  padding-bottom:8%;
+  
+  
+}
+
+#Login-card {
+  background-color: #ffffff;
+   -webkit-box-shadow: rgba(255, 17, 0, 0.17) 0px -23px 25px 0px inset, rgba(255, 38, 0, 0.17) 0px -36px 30px 0px inset, rgba(0, 174, 255, 0.17) 0px -79px 40px 0px inset, rgba(255, 145, 0, 0.17) 0px 2px 1px, rgba(0, 174, 255, 0.17) 0px 4px 2px, rgba(51, 5, 218, 0.09) 0px 8px 4px, rgba(8, 28, 209, 0.09) 0px 16px 8px, rgba(6, 10, 245, 0.09) 0px 32px 16px;
+          box-shadow:  rgba(255, 115, 0, 0.17) 0px -23px 25px 0px inset, rgba(255, 102, 0, 0.17) 0px -36px 30px 0px inset, rgba(0, 174, 255, 0.17) 0px -79px 40px 0px inset, rgba(255, 102, 0, 0.17) 0px 2px 1px, rgba(74, 4, 202, 0.09) 0px 4px 2px, rgba(46, 0, 211, 0.09) 0px 8px 4px, rgba(5, 21, 245, 0.09) 0px 16px 8px, rgba(16, 0, 245, 0.09) 0px 32px 16px;
+  border-radius: 2rem; 
+  height: 30rem;
+  width: 90%;
+  margin-top: 0%;
+  margin-left: 3%;
+}
+
+#Forget-Link {
+  line-height: 1.6rem;
+}

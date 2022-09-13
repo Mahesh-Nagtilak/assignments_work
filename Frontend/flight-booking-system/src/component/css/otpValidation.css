@@ -1,0 +1,23 @@
+#Login-div {
+  background-image: url("https://img.freepik.com/free-vector/airplane-sky_1308-31202.jpg?w=2000");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 94vh;
+  
+  
+  }
+  
+  #Login-card {
+    background-color: #ffffff;
+    -webkit-box-shadow: rgba(0, 174, 255, 0.17) 0px -23px 25px 0px inset, rgba(0, 174, 255, 0.17) 0px -36px 30px 0px inset, rgba(0, 174, 255, 0.17) 0px -79px 40px 0px inset, rgba(0, 174, 255, 0.17) 0px 2px 1px, rgba(0, 174, 255, 0.17) 0px 4px 2px, rgba(51, 5, 218, 0.09) 0px 8px 4px, rgba(8, 33, 255, 0.09) 0px 16px 8px, rgba(6, 10, 245, 0.09) 0px 32px 16px;
+            box-shadow:  rgba(0, 174, 255, 0.17) 0px -23px 25px 0px inset, rgba(0, 174, 255, 0.17) 0px -36px 30px 0px inset, rgba(0, 174, 255, 0.17) 0px -79px 40px 0px inset, rgba(0, 174, 255, 0.17) 0px 2px 1px, rgba(92, 4, 255, 0.09) 0px 4px 2px, rgba(46, 0, 211, 0.09) 0px 8px 4px, rgba(11, 27, 255, 0.09) 0px 16px 8px, rgba(16, 0, 245, 0.09) 0px 32px 16px;
+    border-radius: 4rem;
+    height: 27rem;
+    width: 90%;
+    margin-top: 10%;
+  }
+  
+  #Forget-Link {
+    line-height: 1.6rem;
+  }
+  

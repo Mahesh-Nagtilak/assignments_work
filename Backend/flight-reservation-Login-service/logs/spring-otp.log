@@ -1,0 +1,504 @@
+2022-09-13 09:19:52.987 DEBUG 20376 --- [http-nio-8079-exec-2] org.hibernate.SQL                        : 
+    delete c 
+    from
+        confirmation_token as c  
+    where
+        c.expires_at <now() 
+        and confirmed_at is null
+2022-09-13 09:19:53.043 DEBUG 20376 --- [http-nio-8079-exec-2] org.hibernate.SQL                        : 
+    delete 
+    from
+        user as a 
+    where
+        a.id not in (
+            select
+                c.user_id 
+            from
+                confirmation_token as c
+        )
+2022-09-13 09:19:53.054 DEBUG 20376 --- [http-nio-8079-exec-2] org.hibernate.SQL                        : 
+    select
+        user0_.id as id1_1_,
+        user0_.user_role as user_rol2_1_,
+        user0_.email as email3_1_,
+        user0_.first_name as first_na4_1_,
+        user0_.is_enabled as is_enabl5_1_,
+        user0_.is_locked as is_locke6_1_,
+        user0_.last_name as last_nam7_1_,
+        user0_.password as password8_1_ 
+    from
+        user user0_ 
+    where
+        user0_.email=?
+2022-09-13 09:19:53.078 TRACE 20376 --- [http-nio-8079-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [maheshn@cybage.com]
+2022-09-13 09:19:53.089  WARN 20376 --- [http-nio-8079-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.cybage.flight.exception.EmailAlreadyExistException: Email Already Registred]
+2022-09-13 09:20:02.471  WARN 20376 --- [http-nio-8079-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.IllegalStateException: email not valid]
+2022-09-13 09:20:40.314 DEBUG 20376 --- [http-nio-8079-exec-4] org.hibernate.SQL                        : 
+    select
+        user0_.id as id1_1_,
+        user0_.user_role as user_rol2_1_,
+        user0_.email as email3_1_,
+        user0_.first_name as first_na4_1_,
+        user0_.is_enabled as is_enabl5_1_,
+        user0_.is_locked as is_locke6_1_,
+        user0_.last_name as last_nam7_1_,
+        user0_.password as password8_1_ 
+    from
+        user user0_ 
+    where
+        user0_.email=?
+2022-09-13 09:20:40.315 TRACE 20376 --- [http-nio-8079-exec-4] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [maheshn@cybage.com]
+2022-09-13 09:20:40.443  INFO 20376 --- [http-nio-8079-exec-4] com.cybage.flight.email.EmailService     : Verify OTP for Login
+2022-09-13 09:20:40.444  INFO 20376 --- [http-nio-8079-exec-4] com.cybage.flight.email.EmailService     : maheshn@cybage.com
+2022-09-13 09:20:40.444  INFO 20376 --- [http-nio-8079-exec-4] com.cybage.flight.email.EmailService     : <div style="Margin:0 0 20px 0;font-size:19px;line-height:25px;color:#0b0c0c"><p>Hello,</p><p style="Margin:0 0 20px 0;font-size:19px;line-height:25px;color:#0b0c0c"> . Your One Time Password is :<blockquote style="Margin:0 0 20px 0;border-left:10px solid #b1b4b6;padding:15px 0 0.1px 15px;font-size:19px;line-height:25px"><p style="Margin:0 0 20px 0;font-size:19px;line-height:25px;color:#0b0c0c">896249</p></blockquote></p>
+ OTP will expire in 5 minutes. <p>See you there</p></div>
+2022-09-13 09:20:58.681 DEBUG 20376 --- [http-nio-8079-exec-5] org.hibernate.SQL                        : 
+    select
+        user0_.id as id1_1_,
+        user0_.user_role as user_rol2_1_,
+        user0_.email as email3_1_,
+        user0_.first_name as first_na4_1_,
+        user0_.is_enabled as is_enabl5_1_,
+        user0_.is_locked as is_locke6_1_,
+        user0_.last_name as last_nam7_1_,
+        user0_.password as password8_1_ 
+    from
+        user user0_ 
+    where
+        user0_.email=?
+2022-09-13 09:20:58.682 TRACE 20376 --- [http-nio-8079-exec-5] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [maheshn@cybage.com]
+2022-09-13 09:20:58.687 DEBUG 20376 --- [http-nio-8079-exec-5] org.hibernate.SQL                        : 
+    select
+        user0_.id as id1_1_,
+        user0_.user_role as user_rol2_1_,
+        user0_.email as email3_1_,
+        user0_.first_name as first_na4_1_,
+        user0_.is_enabled as is_enabl5_1_,
+        user0_.is_locked as is_locke6_1_,
+        user0_.last_name as last_nam7_1_,
+        user0_.password as password8_1_ 
+    from
+        user user0_ 
+    where
+        user0_.email=?
+2022-09-13 09:20:58.687 TRACE 20376 --- [http-nio-8079-exec-5] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [maheshn@cybage.com]
+2022-09-13 10:33:01.213 DEBUG 20376 --- [http-nio-8079-exec-7] org.hibernate.SQL                        : 
+    delete c 
+    from
+        confirmation_token as c  
+    where
+        c.expires_at <now() 
+        and confirmed_at is null
+2022-09-13 10:33:01.243 DEBUG 20376 --- [http-nio-8079-exec-7] org.hibernate.SQL                        : 
+    delete 
+    from
+        user as a 
+    where
+        a.id not in (
+            select
+                c.user_id 
+            from
+                confirmation_token as c
+        )
+2022-09-13 10:33:01.254 DEBUG 20376 --- [http-nio-8079-exec-7] org.hibernate.SQL                        : 
+    select
+        user0_.id as id1_1_,
+        user0_.user_role as user_rol2_1_,
+        user0_.email as email3_1_,
+        user0_.first_name as first_na4_1_,
+        user0_.is_enabled as is_enabl5_1_,
+        user0_.is_locked as is_locke6_1_,
+        user0_.last_name as last_nam7_1_,
+        user0_.password as password8_1_ 
+    from
+        user user0_ 
+    where
+        user0_.email=?
+2022-09-13 10:33:01.255 TRACE 20376 --- [http-nio-8079-exec-7] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [dyneshwarmi@cybgae.com]
+2022-09-13 10:33:01.576 DEBUG 20376 --- [http-nio-8079-exec-7] org.hibernate.SQL                        : 
+    insert 
+    into
+        user
+        (user_role, email, first_name, is_enabled, is_locked, last_name, password) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+2022-09-13 10:33:01.577 TRACE 20376 --- [http-nio-8079-exec-7] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [ROLE_USER]
+2022-09-13 10:33:01.578 TRACE 20376 --- [http-nio-8079-exec-7] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [VARCHAR] - [dyneshwarmi@cybgae.com]
+2022-09-13 10:33:01.578 TRACE 20376 --- [http-nio-8079-exec-7] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [VARCHAR] - [dnayeshwar]
+2022-09-13 10:33:01.579 TRACE 20376 --- [http-nio-8079-exec-7] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [BOOLEAN] - [false]
+2022-09-13 10:33:01.579 TRACE 20376 --- [http-nio-8079-exec-7] o.h.type.descriptor.sql.BasicBinder      : binding parameter [5] as [BOOLEAN] - [false]
+2022-09-13 10:33:01.579 TRACE 20376 --- [http-nio-8079-exec-7] o.h.type.descriptor.sql.BasicBinder      : binding parameter [6] as [VARCHAR] - [mirkute]
+2022-09-13 10:33:01.579 TRACE 20376 --- [http-nio-8079-exec-7] o.h.type.descriptor.sql.BasicBinder      : binding parameter [7] as [VARCHAR] - [$2a$10$TF7j.BEfGHlg7jemGzibvuXblapvDcbkTW9in9jJsbyDeScRGp0Nm]
+2022-09-13 10:33:01.649 DEBUG 20376 --- [http-nio-8079-exec-7] org.hibernate.SQL                        : 
+    insert 
+    into
+        confirmation_token
+        (user_id, confirmed_at, created_at, expires_at, token) 
+    values
+        (?, ?, ?, ?, ?)
+2022-09-13 10:33:01.651 TRACE 20376 --- [http-nio-8079-exec-7] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [INTEGER] - [15]
+2022-09-13 10:33:01.652 TRACE 20376 --- [http-nio-8079-exec-7] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [TIMESTAMP] - [null]
+2022-09-13 10:33:01.653 TRACE 20376 --- [http-nio-8079-exec-7] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [TIMESTAMP] - [2022-09-13T10:33:01.642697800]
+2022-09-13 10:33:01.657 TRACE 20376 --- [http-nio-8079-exec-7] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [TIMESTAMP] - [2022-09-13T10:48:01.642697800]
+2022-09-13 10:33:01.658 TRACE 20376 --- [http-nio-8079-exec-7] o.h.type.descriptor.sql.BasicBinder      : binding parameter [5] as [VARCHAR] - [ab26f3c0-b4d8-40fe-a7ca-5cae2d899a57]
+2022-09-13 10:33:01.690  INFO 20376 --- [http-nio-8079-exec-7] com.cybage.flight.email.EmailService     : Confirm your email for registration
+2022-09-13 10:33:01.690  INFO 20376 --- [http-nio-8079-exec-7] com.cybage.flight.email.EmailService     : dyneshwarmi@cybgae.com
+2022-09-13 10:33:01.690  INFO 20376 --- [http-nio-8079-exec-7] com.cybage.flight.email.EmailService     : <div style="Margin:0 0 20px 0;font-size:19px;line-height:25px;color:#0b0c0c"><p>Hello dnayeshwar,</p><p style="Margin:0 0 20px 0;font-size:19px;line-height:25px;color:#0b0c0c"> Thank you for registering. Please click on the below link to activate your account: </p><blockquote style="Margin:0 0 20px 0;border-left:10px solid #b1b4b6;padding:15px 0 0.1px 15px;font-size:19px;line-height:25px"><p style="Margin:0 0 20px 0;font-size:19px;line-height:25px;color:#0b0c0c"> <a href="172.27.95.71:8091/api/registration/confirm?token=ab26f3c0-b4d8-40fe-a7ca-5cae2d899a57">Activate Now</a> </p></blockquote>
+ Link will expire in 15 minutes. <p>See you soon</p></div>
+2022-09-13 10:33:56.397 DEBUG 20376 --- [http-nio-8079-exec-8] org.hibernate.SQL                        : 
+    delete c 
+    from
+        confirmation_token as c  
+    where
+        c.expires_at <now() 
+        and confirmed_at is null
+2022-09-13 10:33:56.401 DEBUG 20376 --- [http-nio-8079-exec-8] org.hibernate.SQL                        : 
+    delete 
+    from
+        user as a 
+    where
+        a.id not in (
+            select
+                c.user_id 
+            from
+                confirmation_token as c
+        )
+2022-09-13 10:33:56.404 DEBUG 20376 --- [http-nio-8079-exec-8] org.hibernate.SQL                        : 
+    select
+        user0_.id as id1_1_,
+        user0_.user_role as user_rol2_1_,
+        user0_.email as email3_1_,
+        user0_.first_name as first_na4_1_,
+        user0_.is_enabled as is_enabl5_1_,
+        user0_.is_locked as is_locke6_1_,
+        user0_.last_name as last_nam7_1_,
+        user0_.password as password8_1_ 
+    from
+        user user0_ 
+    where
+        user0_.email=?
+2022-09-13 10:33:56.405 TRACE 20376 --- [http-nio-8079-exec-8] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [maheshn@cybage.com]
+2022-09-13 10:33:56.410  WARN 20376 --- [http-nio-8079-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.cybage.flight.exception.EmailAlreadyExistException: Email Already Registred]
+2022-09-13 10:34:09.050  WARN 20376 --- [http-nio-8079-exec-9] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.IllegalStateException: email not valid]
+2022-09-13 10:34:36.305 DEBUG 20376 --- [http-nio-8079-exec-10] org.hibernate.SQL                        : 
+    select
+        user0_.id as id1_1_,
+        user0_.user_role as user_rol2_1_,
+        user0_.email as email3_1_,
+        user0_.first_name as first_na4_1_,
+        user0_.is_enabled as is_enabl5_1_,
+        user0_.is_locked as is_locke6_1_,
+        user0_.last_name as last_nam7_1_,
+        user0_.password as password8_1_ 
+    from
+        user user0_ 
+    where
+        user0_.email=?
+2022-09-13 10:34:36.306 TRACE 20376 --- [http-nio-8079-exec-10] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [maheshn@cybage.com]
+2022-09-13 10:34:36.479  WARN 20376 --- [http-nio-8079-exec-10] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.cybage.flight.exception.InvalidCredentialsException: INVALID_CREDENTIALS]
+2022-09-13 10:34:43.543 DEBUG 20376 --- [http-nio-8079-exec-1] org.hibernate.SQL                        : 
+    select
+        user0_.id as id1_1_,
+        user0_.user_role as user_rol2_1_,
+        user0_.email as email3_1_,
+        user0_.first_name as first_na4_1_,
+        user0_.is_enabled as is_enabl5_1_,
+        user0_.is_locked as is_locke6_1_,
+        user0_.last_name as last_nam7_1_,
+        user0_.password as password8_1_ 
+    from
+        user user0_ 
+    where
+        user0_.email=?
+2022-09-13 10:34:43.543 TRACE 20376 --- [http-nio-8079-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [maheshn@cybage.com]
+2022-09-13 10:34:43.686  INFO 20376 --- [http-nio-8079-exec-1] com.cybage.flight.email.EmailService     : Verify OTP for Login
+2022-09-13 10:34:43.691  INFO 20376 --- [http-nio-8079-exec-1] com.cybage.flight.email.EmailService     : maheshn@cybage.com
+2022-09-13 10:34:43.691  INFO 20376 --- [http-nio-8079-exec-1] com.cybage.flight.email.EmailService     : <div style="Margin:0 0 20px 0;font-size:19px;line-height:25px;color:#0b0c0c"><p>Hello,</p><p style="Margin:0 0 20px 0;font-size:19px;line-height:25px;color:#0b0c0c"> . Your One Time Password is :<blockquote style="Margin:0 0 20px 0;border-left:10px solid #b1b4b6;padding:15px 0 0.1px 15px;font-size:19px;line-height:25px"><p style="Margin:0 0 20px 0;font-size:19px;line-height:25px;color:#0b0c0c">890402</p></blockquote></p>
+ OTP will expire in 5 minutes. <p>See you there</p></div>
+2022-09-13 10:34:57.444 DEBUG 20376 --- [http-nio-8079-exec-2] org.hibernate.SQL                        : 
+    select
+        user0_.id as id1_1_,
+        user0_.user_role as user_rol2_1_,
+        user0_.email as email3_1_,
+        user0_.first_name as first_na4_1_,
+        user0_.is_enabled as is_enabl5_1_,
+        user0_.is_locked as is_locke6_1_,
+        user0_.last_name as last_nam7_1_,
+        user0_.password as password8_1_ 
+    from
+        user user0_ 
+    where
+        user0_.email=?
+2022-09-13 10:34:57.444 TRACE 20376 --- [http-nio-8079-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [maheshn@cybage.com]
+2022-09-13 10:34:57.451 DEBUG 20376 --- [http-nio-8079-exec-2] org.hibernate.SQL                        : 
+    select
+        user0_.id as id1_1_,
+        user0_.user_role as user_rol2_1_,
+        user0_.email as email3_1_,
+        user0_.first_name as first_na4_1_,
+        user0_.is_enabled as is_enabl5_1_,
+        user0_.is_locked as is_locke6_1_,
+        user0_.last_name as last_nam7_1_,
+        user0_.password as password8_1_ 
+    from
+        user user0_ 
+    where
+        user0_.email=?
+2022-09-13 10:34:57.452 TRACE 20376 --- [http-nio-8079-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [maheshn@cybage.com]
+2022-09-13 22:33:02.744  INFO 20376 --- [RMI TCP Connection(1753)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-09-13 22:33:02.874  INFO 20376 --- [RMI TCP Connection(1753)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-09-13 22:33:02.891  INFO 20376 --- [RMI TCP Connection(1753)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2022-09-13 22:33:02.917  WARN 20376 --- [RMI TCP Connection(1753)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [logback-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.3/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.3/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+ java.base@17.0.3/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
+ java.base@17.0.3/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3463)
+ java.base@17.0.3/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3434)
+ java.base@17.0.3/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1623)
+ java.base@17.0.3/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1170)
+ java.base@17.0.3/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.3/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.3/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.3/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.3/java.lang.Thread.run(Thread.java:833)
+2022-09-13 22:33:02.918  WARN 20376 --- [RMI TCP Connection(1753)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [logback-2] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.3/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.3/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+ java.base@17.0.3/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
+ java.base@17.0.3/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3463)
+ java.base@17.0.3/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3434)
+ java.base@17.0.3/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1623)
+ java.base@17.0.3/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1170)
+ java.base@17.0.3/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.3/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.3/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.3/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.3/java.lang.Thread.run(Thread.java:833)
+2022-09-13 22:33:02.954  INFO 20376 --- [RMI TCP Connection(1753)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-09-13 22:33:02.983  INFO 20376 --- [RMI TCP Connection(1753)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-09-13 22:33:02.998  INFO 20376 --- [RMI TCP Connection(1753)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-09-13 22:34:59.762  INFO 10812 --- [restartedMain] FlightReservationLoginServiceApplication : Starting FlightReservationLoginServiceApplication using Java 17.0.3 on Maheshn-VD2 with PID 10812 (C:\Users\maheshn\Desktop\Team-04_JavaReact_MajorProject-Fight-Reservation\Backend\flight-reservation-Login-service\target\classes started by maheshn in C:\Users\maheshn\Desktop\Team-04_JavaReact_MajorProject-Fight-Reservation\Backend\flight-reservation-Login-service)
+2022-09-13 22:34:59.764  INFO 10812 --- [restartedMain] FlightReservationLoginServiceApplication : No active profile set, falling back to 1 default profile: "default"
+2022-09-13 22:34:59.820  INFO 10812 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-09-13 22:34:59.821  INFO 10812 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-09-13 22:35:00.639  INFO 10812 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-09-13 22:35:00.728  INFO 10812 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 75 ms. Found 2 JPA repository interfaces.
+2022-09-13 22:35:01.372  INFO 10812 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8079 (http)
+2022-09-13 22:35:01.384  INFO 10812 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-09-13 22:35:01.385  INFO 10812 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-13 22:35:01.484  INFO 10812 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-09-13 22:35:01.484  INFO 10812 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1663 ms
+2022-09-13 22:35:01.686  INFO 10812 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-09-13 22:35:01.744  INFO 10812 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.10.Final
+2022-09-13 22:35:01.917  INFO 10812 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-09-13 22:35:02.034  INFO 10812 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-09-13 22:35:02.385  INFO 10812 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-09-13 22:35:02.404  INFO 10812 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-09-13 22:35:03.047  INFO 10812 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-09-13 22:35:03.061  INFO 10812 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-09-13 22:35:03.592  WARN 10812 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-09-13 22:35:04.020  INFO 10812 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@48c4b0d3, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@41636c6, org.springframework.security.web.context.SecurityContextPersistenceFilter@6f5a7fea, org.springframework.security.web.header.HeaderWriterFilter@597039ac, org.springframework.security.web.authentication.logout.LogoutFilter@48f1ee99, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@61edb16c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2cb71c69, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4c9897f9, org.springframework.security.web.session.SessionManagementFilter@555daaaa, org.springframework.security.web.access.ExceptionTranslationFilter@6dc32be0, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@76d5a2bb]
+2022-09-13 22:35:04.799  WARN 10812 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2022-09-13 22:35:04.857  INFO 10812 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8079 (http) with context path ''
+2022-09-13 22:35:04.875  INFO 10812 --- [restartedMain] FlightReservationLoginServiceApplication : Started FlightReservationLoginServiceApplication in 5.918 seconds (JVM running for 6.823)
+2022-09-13 22:37:38.236  INFO 10812 --- [http-nio-8079-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-09-13 22:37:38.236  INFO 10812 --- [http-nio-8079-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-09-13 22:37:38.241  INFO 10812 --- [http-nio-8079-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2022-09-13 22:37:38.442 DEBUG 10812 --- [http-nio-8079-exec-1] org.hibernate.SQL                        : 
+    delete c 
+    from
+        confirmation_token as c  
+    where
+        c.expires_at <now() 
+        and confirmed_at is null
+2022-09-13 22:37:38.498 DEBUG 10812 --- [http-nio-8079-exec-1] org.hibernate.SQL                        : 
+    delete 
+    from
+        user as a 
+    where
+        a.id not in (
+            select
+                c.user_id 
+            from
+                confirmation_token as c
+        )
+2022-09-13 22:37:38.568 DEBUG 10812 --- [http-nio-8079-exec-1] org.hibernate.SQL                        : 
+    select
+        user0_.id as id1_1_,
+        user0_.user_role as user_rol2_1_,
+        user0_.email as email3_1_,
+        user0_.first_name as first_na4_1_,
+        user0_.is_enabled as is_enabl5_1_,
+        user0_.is_locked as is_locke6_1_,
+        user0_.last_name as last_nam7_1_,
+        user0_.password as password8_1_ 
+    from
+        user user0_ 
+    where
+        user0_.email=?
+2022-09-13 22:37:38.571 TRACE 10812 --- [http-nio-8079-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [maheshn@cybage.com]
+2022-09-13 22:37:38.628  WARN 10812 --- [http-nio-8079-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.cybage.flight.exception.EmailAlreadyExistException: Email Already Registred]
+2022-09-13 22:38:02.158 DEBUG 10812 --- [http-nio-8079-exec-2] org.hibernate.SQL                        : 
+    delete c 
+    from
+        confirmation_token as c  
+    where
+        c.expires_at <now() 
+        and confirmed_at is null
+2022-09-13 22:38:02.163 DEBUG 10812 --- [http-nio-8079-exec-2] org.hibernate.SQL                        : 
+    delete 
+    from
+        user as a 
+    where
+        a.id not in (
+            select
+                c.user_id 
+            from
+                confirmation_token as c
+        )
+2022-09-13 22:38:02.169 DEBUG 10812 --- [http-nio-8079-exec-2] org.hibernate.SQL                        : 
+    select
+        user0_.id as id1_1_,
+        user0_.user_role as user_rol2_1_,
+        user0_.email as email3_1_,
+        user0_.first_name as first_na4_1_,
+        user0_.is_enabled as is_enabl5_1_,
+        user0_.is_locked as is_locke6_1_,
+        user0_.last_name as last_nam7_1_,
+        user0_.password as password8_1_ 
+    from
+        user user0_ 
+    where
+        user0_.email=?
+2022-09-13 22:38:02.169 TRACE 10812 --- [http-nio-8079-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [jayeshmi@cybage.com]
+2022-09-13 22:38:02.174  WARN 10812 --- [http-nio-8079-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.cybage.flight.exception.EmailAlreadyExistException: Email Already Registred]
+2022-09-13 22:38:14.479  WARN 10812 --- [http-nio-8079-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.IllegalStateException: email not valid]
+2022-09-13 22:39:09.775 DEBUG 10812 --- [http-nio-8079-exec-4] org.hibernate.SQL                        : 
+    delete c 
+    from
+        confirmation_token as c  
+    where
+        c.expires_at <now() 
+        and confirmed_at is null
+2022-09-13 22:39:09.780 DEBUG 10812 --- [http-nio-8079-exec-4] org.hibernate.SQL                        : 
+    delete 
+    from
+        user as a 
+    where
+        a.id not in (
+            select
+                c.user_id 
+            from
+                confirmation_token as c
+        )
+2022-09-13 22:39:09.784 DEBUG 10812 --- [http-nio-8079-exec-4] org.hibernate.SQL                        : 
+    select
+        user0_.id as id1_1_,
+        user0_.user_role as user_rol2_1_,
+        user0_.email as email3_1_,
+        user0_.first_name as first_na4_1_,
+        user0_.is_enabled as is_enabl5_1_,
+        user0_.is_locked as is_locke6_1_,
+        user0_.last_name as last_nam7_1_,
+        user0_.password as password8_1_ 
+    from
+        user user0_ 
+    where
+        user0_.email=?
+2022-09-13 22:39:09.784 TRACE 10812 --- [http-nio-8079-exec-4] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [manishkumar@cybage.com]
+2022-09-13 22:39:09.998 DEBUG 10812 --- [http-nio-8079-exec-4] org.hibernate.SQL                        : 
+    insert 
+    into
+        user
+        (user_role, email, first_name, is_enabled, is_locked, last_name, password) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+2022-09-13 22:39:09.999 TRACE 10812 --- [http-nio-8079-exec-4] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [ROLE_USER]
+2022-09-13 22:39:10.000 TRACE 10812 --- [http-nio-8079-exec-4] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [VARCHAR] - [manishkumar@cybage.com]
+2022-09-13 22:39:10.000 TRACE 10812 --- [http-nio-8079-exec-4] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [VARCHAR] - [jayesh]
+2022-09-13 22:39:10.001 TRACE 10812 --- [http-nio-8079-exec-4] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [BOOLEAN] - [false]
+2022-09-13 22:39:10.001 TRACE 10812 --- [http-nio-8079-exec-4] o.h.type.descriptor.sql.BasicBinder      : binding parameter [5] as [BOOLEAN] - [false]
+2022-09-13 22:39:10.001 TRACE 10812 --- [http-nio-8079-exec-4] o.h.type.descriptor.sql.BasicBinder      : binding parameter [6] as [VARCHAR] - [mishra]
+2022-09-13 22:39:10.001 TRACE 10812 --- [http-nio-8079-exec-4] o.h.type.descriptor.sql.BasicBinder      : binding parameter [7] as [VARCHAR] - [$2a$10$PzIXXSbrjReThghdhOSE5uT0q5A5HbkfgQsVQzYnqgA.MoDE13Nh6]
+2022-09-13 22:39:10.046 DEBUG 10812 --- [http-nio-8079-exec-4] org.hibernate.SQL                        : 
+    insert 
+    into
+        confirmation_token
+        (user_id, confirmed_at, created_at, expires_at, token) 
+    values
+        (?, ?, ?, ?, ?)
+2022-09-13 22:39:10.047 TRACE 10812 --- [http-nio-8079-exec-4] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [INTEGER] - [16]
+2022-09-13 22:39:10.047 TRACE 10812 --- [http-nio-8079-exec-4] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [TIMESTAMP] - [null]
+2022-09-13 22:39:10.048 TRACE 10812 --- [http-nio-8079-exec-4] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [TIMESTAMP] - [2022-09-13T22:39:10.041286700]
+2022-09-13 22:39:10.048 TRACE 10812 --- [http-nio-8079-exec-4] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [TIMESTAMP] - [2022-09-13T22:54:10.041286700]
+2022-09-13 22:39:10.048 TRACE 10812 --- [http-nio-8079-exec-4] o.h.type.descriptor.sql.BasicBinder      : binding parameter [5] as [VARCHAR] - [4de585df-50a3-4be1-a789-0dbc61c08d64]
+2022-09-13 22:39:10.135  INFO 10812 --- [http-nio-8079-exec-4] com.cybage.flight.email.EmailService     : Confirm your email for registration
+2022-09-13 22:39:10.136  INFO 10812 --- [http-nio-8079-exec-4] com.cybage.flight.email.EmailService     : manishkumar@cybage.com
+2022-09-13 22:39:10.136  INFO 10812 --- [http-nio-8079-exec-4] com.cybage.flight.email.EmailService     : <div style="Margin:0 0 20px 0;font-size:19px;line-height:25px;color:#0b0c0c"><p>Hello jayesh,</p><p style="Margin:0 0 20px 0;font-size:19px;line-height:25px;color:#0b0c0c"> Thank you for registering. Please click on the below link to activate your account: </p><blockquote style="Margin:0 0 20px 0;border-left:10px solid #b1b4b6;padding:15px 0 0.1px 15px;font-size:19px;line-height:25px"><p style="Margin:0 0 20px 0;font-size:19px;line-height:25px;color:#0b0c0c"> <a href="172.27.95.71:8091/api/registration/confirm?token=4de585df-50a3-4be1-a789-0dbc61c08d64">Activate Now</a> </p></blockquote>
+ Link will expire in 15 minutes. <p>See you soon</p></div>
+2022-09-13 22:39:28.330 DEBUG 10812 --- [http-nio-8079-exec-5] org.hibernate.SQL                        : 
+    select
+        user0_.id as id1_1_,
+        user0_.user_role as user_rol2_1_,
+        user0_.email as email3_1_,
+        user0_.first_name as first_na4_1_,
+        user0_.is_enabled as is_enabl5_1_,
+        user0_.is_locked as is_locke6_1_,
+        user0_.last_name as last_nam7_1_,
+        user0_.password as password8_1_ 
+    from
+        user user0_ 
+    where
+        user0_.email=?
+2022-09-13 22:39:28.331 TRACE 10812 --- [http-nio-8079-exec-5] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [maheshn@cybage.com]
+2022-09-13 22:39:28.465  WARN 10812 --- [http-nio-8079-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.cybage.flight.exception.InvalidCredentialsException: INVALID_CREDENTIALS]
+2022-09-13 22:39:42.229 DEBUG 10812 --- [http-nio-8079-exec-6] org.hibernate.SQL                        : 
+    select
+        user0_.id as id1_1_,
+        user0_.user_role as user_rol2_1_,
+        user0_.email as email3_1_,
+        user0_.first_name as first_na4_1_,
+        user0_.is_enabled as is_enabl5_1_,
+        user0_.is_locked as is_locke6_1_,
+        user0_.last_name as last_nam7_1_,
+        user0_.password as password8_1_ 
+    from
+        user user0_ 
+    where
+        user0_.email=?
+2022-09-13 22:39:42.230 TRACE 10812 --- [http-nio-8079-exec-6] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [maheshn@cybage.com]
+2022-09-13 22:39:42.379  INFO 10812 --- [http-nio-8079-exec-6] com.cybage.flight.email.EmailService     : Verify OTP for Login
+2022-09-13 22:39:42.379  INFO 10812 --- [http-nio-8079-exec-6] com.cybage.flight.email.EmailService     : maheshn@cybage.com
+2022-09-13 22:39:42.379  INFO 10812 --- [http-nio-8079-exec-6] com.cybage.flight.email.EmailService     : <div style="Margin:0 0 20px 0;font-size:19px;line-height:25px;color:#0b0c0c"><p>Hello,</p><p style="Margin:0 0 20px 0;font-size:19px;line-height:25px;color:#0b0c0c"> . Your One Time Password is :<blockquote style="Margin:0 0 20px 0;border-left:10px solid #b1b4b6;padding:15px 0 0.1px 15px;font-size:19px;line-height:25px"><p style="Margin:0 0 20px 0;font-size:19px;line-height:25px;color:#0b0c0c">349404</p></blockquote></p>
+ OTP will expire in 5 minutes. <p>See you there</p></div>
+2022-09-13 22:40:01.056  WARN 10812 --- [http-nio-8079-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.cybage.flight.exception.WrongOtpException: Wrong Otp Entered...Try Again..!!]
+2022-09-13 22:40:08.829 DEBUG 10812 --- [http-nio-8079-exec-8] org.hibernate.SQL                        : 
+    select
+        user0_.id as id1_1_,
+        user0_.user_role as user_rol2_1_,
+        user0_.email as email3_1_,
+        user0_.first_name as first_na4_1_,
+        user0_.is_enabled as is_enabl5_1_,
+        user0_.is_locked as is_locke6_1_,
+        user0_.last_name as last_nam7_1_,
+        user0_.password as password8_1_ 
+    from
+        user user0_ 
+    where
+        user0_.email=?
+2022-09-13 22:40:08.830 TRACE 10812 --- [http-nio-8079-exec-8] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [maheshn@cybage.com]
+2022-09-13 22:40:08.900 DEBUG 10812 --- [http-nio-8079-exec-8] org.hibernate.SQL                        : 
+    select
+        user0_.id as id1_1_,
+        user0_.user_role as user_rol2_1_,
+        user0_.email as email3_1_,
+        user0_.first_name as first_na4_1_,
+        user0_.is_enabled as is_enabl5_1_,
+        user0_.is_locked as is_locke6_1_,
+        user0_.last_name as last_nam7_1_,
+        user0_.password as password8_1_ 
+    from
+        user user0_ 
+    where
+        user0_.email=?
+2022-09-13 22:40:08.901 TRACE 10812 --- [http-nio-8079-exec-8] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [maheshn@cybage.com]

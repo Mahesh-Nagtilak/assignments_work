@@ -1,0 +1,359 @@
+2022-09-13 09:19:53.105  WARN 11748 --- [http-nio-8091-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.cybage.flight.exception.EmailAlreadyExistException: Email Already Exist]
+2022-09-13 09:20:02.473  WARN 11748 --- [http-nio-8091-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.cybage.flight.exception.AddressNotFound: Email Address Not Found]
+2022-09-13 09:23:13.321  INFO 11748 --- [http-nio-8091-exec-9] c.c.flight.controllers.FlightController  : Filter Flight ByMorning  api  called
+2022-09-13 09:23:14.280  INFO 11748 --- [http-nio-8091-exec-10] c.c.flight.controllers.FlightController  : Filter Flight ByNoon  api  called
+2022-09-13 09:23:15.246  INFO 11748 --- [http-nio-8091-exec-1] c.c.flight.controllers.FlightController  :  Filter Flight ByEvening api  called
+2022-09-13 09:23:15.833  INFO 11748 --- [http-nio-8091-exec-4] c.c.flight.controllers.FlightController  :  FIlter Flight ByNight api  called
+2022-09-13 09:23:16.679  INFO 11748 --- [http-nio-8091-exec-6] c.c.flight.controllers.FlightController  : Flight sort by fare api  called
+2022-09-13 09:23:17.316  INFO 11748 --- [http-nio-8091-exec-9] c.c.flight.controllers.FlightController  : Flight by refundable fare  api  called
+2022-09-13 09:25:49.527  INFO 11748 --- [http-nio-8091-exec-8] com.cybage.flight.email.EmailService     : Booking Confirmation: Flight Number: Sk-205, 2022-09-13
+2022-09-13 09:25:49.528  INFO 11748 --- [http-nio-8091-exec-8] com.cybage.flight.email.EmailService     : maheshn@cybage.com
+2022-09-13 09:25:49.528  INFO 11748 --- [http-nio-8091-exec-8] com.cybage.flight.email.EmailService     : <p style='background-color: lemonchiffon;'>Dear Customer, Thanks for booking your Booking,Your Booking Details Are  indicated Below.<br/><b> Flight Booking Id:52<br/>Flight Name:Air-usa<br/> Flight Number:Sk-205<br/> Booking Amount: 8100.0<br/><h3>Flight Details :<h3/></b><p/><table border='1' style='background-color: lemonchiffon;' ><tr>
+    <th>Flight Number</th>
+    <th>Flight Name</th>
+    <th>Source</th>
+    <th>Destination</td>
+    <th>Departure Date</td>
+    <th>Departure Time</th>
+    <th>Arrival Time</th>
+    <th>Flight Class</th>
+</tr>
+<tr>
+    <td>Sk-205</td>
+    <td>Air-usa</td>
+    <td>solapur</td>
+    <td>kolkata</td>
+    <td>2022-10-19</td>
+    <td>10:02:01</td>
+    <td>10:02:01</td>
+    <td>business</td>
+</table><hr/> <h3>Passenger Details :<h3/> <table border='1' style='background-color: lemonchiffon;'><tr>  <td>PRN Number</td>	 <td>First Name </td>  <td>Last Name</td>	 <td>Age</td>	  <td>Gender</td>	 <td>Seat Number</td></tr>
+<tr>
+    <td>75</td>
+    <td>Mahesh</td>
+    <td>Nagtilak</td>
+    <td>45</td>
+    <td>male</td>
+    <td>B-14</td>
+</tr></table>
+2022-09-13 09:29:27.662  INFO 11748 --- [http-nio-8091-exec-8] com.cybage.flight.email.EmailService     : Your Ticket has been Cancelled
+2022-09-13 09:29:27.662  INFO 11748 --- [http-nio-8091-exec-8] com.cybage.flight.email.EmailService     : maheshn@cybage.com
+2022-09-13 09:29:27.663  INFO 11748 --- [http-nio-8091-exec-8] com.cybage.flight.email.EmailService     : <table border='1' style='background-color: lemonchiffon;'><th>Flight Number</th>
+    <th>Flight Name</th>
+    <th>Source</th>
+    <th>Destination</td>
+    <th>Departure Date</td>
+    <th>Departure Time</th>
+    <th>Arrival Time</th>
+    <th>Flight Class</th>
+</tr>
+<tr>
+    <td>sk-205</td>
+    <td>Air-usa</td>
+    <td>solapur</td>
+    <td>kolkata</td>
+    <td>2022-10-19</td>
+    <td>01:02:01</td>
+    <td>10:02:01</td>
+    <td>Business</td>
+</table><h3>Passenger Details :<h3/> <table border='1' style='background-color: lemonchiffon;'><tr>  <td>PRN Number</td>	 <td>First Name </td>  <td>Last Name</td>	 <td>Age</td>	  <td>Gender</td>	 <td>Seat Number</td>	 <td>Status</td></tr>
+<tr>
+    <td>11</td>
+    <td>Mahesh</td>
+    <td>Nagtilak</td>
+    <td>12</td>
+    <td>male</td>
+    <td>B-3</td>
+	 <td><b>Cancelled<b/></td></tr></table><br/>Your refundable amount will be be credited in your account shortly..!!<br/> Feel Free to connect with us for any Query <br/>Admin<br/>Mahesh Nagtilak
+2022-09-13 10:33:56.418  WARN 11748 --- [http-nio-8091-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.cybage.flight.exception.EmailAlreadyExistException: Email Already Exist]
+2022-09-13 10:34:09.052  WARN 11748 --- [http-nio-8091-exec-9] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.cybage.flight.exception.AddressNotFound: Email Address Not Found]
+2022-09-13 10:34:36.485  WARN 11748 --- [http-nio-8091-exec-10] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.cybage.flight.exception.InvalidCredentialsException: Invalid Credentials]
+2022-09-13 10:36:38.915  INFO 11748 --- [http-nio-8091-exec-4] c.c.flight.controllers.FlightController  : Filter Flight ByMorning  api  called
+2022-09-13 10:36:39.987  INFO 11748 --- [http-nio-8091-exec-3] c.c.flight.controllers.FlightController  : Filter Flight ByNoon  api  called
+2022-09-13 10:36:41.110  INFO 11748 --- [http-nio-8091-exec-10] c.c.flight.controllers.FlightController  :  Filter Flight ByEvening api  called
+2022-09-13 10:36:42.495  INFO 11748 --- [http-nio-8091-exec-1] c.c.flight.controllers.FlightController  :  FIlter Flight ByNight api  called
+2022-09-13 10:36:45.551  INFO 11748 --- [http-nio-8091-exec-4] c.c.flight.controllers.FlightController  : Flight sort by fare api  called
+2022-09-13 10:36:47.780  INFO 11748 --- [http-nio-8091-exec-5] c.c.flight.controllers.FlightController  : Filter Flight ByNoon  api  called
+2022-09-13 10:36:48.336  INFO 11748 --- [http-nio-8091-exec-3] c.c.flight.controllers.FlightController  : Filter Flight ByMorning  api  called
+2022-09-13 10:36:50.894  INFO 11748 --- [http-nio-8091-exec-6] c.c.flight.controllers.FlightController  : Filter Flight ByNoon  api  called
+2022-09-13 10:36:51.654  INFO 11748 --- [http-nio-8091-exec-7] c.c.flight.controllers.FlightController  :  Filter Flight ByEvening api  called
+2022-09-13 10:36:52.373  INFO 11748 --- [http-nio-8091-exec-10] c.c.flight.controllers.FlightController  :  FIlter Flight ByNight api  called
+2022-09-13 10:36:53.578  INFO 11748 --- [http-nio-8091-exec-8] c.c.flight.controllers.FlightController  :  FIlter Flight ByNight api  called
+2022-09-13 10:36:53.749  INFO 11748 --- [http-nio-8091-exec-1] c.c.flight.controllers.FlightController  :  FIlter Flight ByNight api  called
+2022-09-13 10:36:54.680  INFO 11748 --- [http-nio-8091-exec-2] c.c.flight.controllers.FlightController  : Filter Flight ByMorning  api  called
+2022-09-13 10:40:51.859  INFO 11748 --- [http-nio-8091-exec-1] com.cybage.flight.email.EmailService     : Booking Confirmation: Flight Number: Sk-205, 2022-09-13
+2022-09-13 10:40:51.859  INFO 11748 --- [http-nio-8091-exec-1] com.cybage.flight.email.EmailService     : maheshn@cybage.com
+2022-09-13 10:40:51.859  INFO 11748 --- [http-nio-8091-exec-1] com.cybage.flight.email.EmailService     : <p style='background-color: lemonchiffon;'>Dear Customer, Thanks for booking your Booking,Your Booking Details Are  indicated Below.<br/><b> Flight Booking Id:53<br/>Flight Name:Air-usa<br/> Flight Number:Sk-205<br/> Booking Amount: 26775.0<br/><h3>Flight Details :<h3/></b><p/><table border='1' style='background-color: lemonchiffon;' ><tr>
+    <th>Flight Number</th>
+    <th>Flight Name</th>
+    <th>Source</th>
+    <th>Destination</td>
+    <th>Departure Date</td>
+    <th>Departure Time</th>
+    <th>Arrival Time</th>
+    <th>Flight Class</th>
+</tr>
+<tr>
+    <td>Sk-205</td>
+    <td>Air-usa</td>
+    <td>solapur</td>
+    <td>kolkata</td>
+    <td>2022-10-19</td>
+    <td>10:02:01</td>
+    <td>10:02:01</td>
+    <td>Business</td>
+</table><hr/> <h3>Passenger Details :<h3/> <table border='1' style='background-color: lemonchiffon;'><tr>  <td>PRN Number</td>	 <td>First Name </td>  <td>Last Name</td>	 <td>Age</td>	  <td>Gender</td>	 <td>Seat Number</td></tr>
+<tr>
+    <td>76</td>
+    <td>dnyeshwar</td>
+    <td>mirkute</td>
+    <td>23</td>
+    <td>male</td>
+    <td>B-13 (Window-left Side)</td>
+</tr></tr>
+<tr>
+    <td>77</td>
+    <td>ajay</td>
+    <td>yadhav</td>
+    <td>26</td>
+    <td>male</td>
+    <td>B-12 (Window-Right Side)</td>
+</tr></tr>
+<tr>
+    <td>78</td>
+    <td>Mahesh</td>
+    <td>Nagtilak</td>
+    <td>5</td>
+    <td>male</td>
+    <td>B-11</td>
+</tr></tr>
+<tr>
+    <td>Infant-passenger</td>
+    <td>sambhji</td>
+    <td>jai</td>
+    <td>2</td>
+    <td>male</td>
+    <td>No Seat</td>
+</tr></table>
+2022-09-13 13:52:27.682  INFO 11748 --- [http-nio-8091-exec-1] com.cybage.flight.email.EmailService     : Your Ticket has been Cancelled
+2022-09-13 13:52:27.683  INFO 11748 --- [http-nio-8091-exec-1] com.cybage.flight.email.EmailService     : maheshn@cybage.com
+2022-09-13 13:52:27.683  INFO 11748 --- [http-nio-8091-exec-1] com.cybage.flight.email.EmailService     : <table border='1' style='background-color: lemonchiffon;'><th>Flight Number</th>
+    <th>Flight Name</th>
+    <th>Source</th>
+    <th>Destination</td>
+    <th>Departure Date</td>
+    <th>Departure Time</th>
+    <th>Arrival Time</th>
+    <th>Flight Class</th>
+</tr>
+<tr>
+    <td>sk-205</td>
+    <td>Air-usa</td>
+    <td>solapur</td>
+    <td>kolkata</td>
+    <td>2022-10-19</td>
+    <td>01:02:01</td>
+    <td>10:02:01</td>
+    <td>Business</td>
+</table><h3>Passenger Details :<h3/> <table border='1' style='background-color: lemonchiffon;'><tr>  <td>PRN Number</td>	 <td>First Name </td>  <td>Last Name</td>	 <td>Age</td>	  <td>Gender</td>	 <td>Seat Number</td>	 <td>Status</td></tr>
+<tr>
+    <td>12</td>
+    <td>12</td>
+    <td>12</td>
+    <td>45</td>
+    <td>female</td>
+    <td>B-2</td>
+	 <td><b>Cancelled<b/></td></tr></table><br/>Your refundable amount will be be credited in your account shortly..!!<br/> Feel Free to connect with us for any Query <br/>Admin<br/>Mahesh Nagtilak
+2022-09-13 22:33:01.597  INFO 11748 --- [RMI TCP Connection(1754)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-09-13 22:33:01.789  INFO 11748 --- [RMI TCP Connection(1754)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-09-13 22:33:01.815  INFO 11748 --- [RMI TCP Connection(1754)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2022-09-13 22:33:01.895  WARN 11748 --- [RMI TCP Connection(1754)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [logback-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.3/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.3/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+ java.base@17.0.3/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
+ java.base@17.0.3/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3463)
+ java.base@17.0.3/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3434)
+ java.base@17.0.3/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1623)
+ java.base@17.0.3/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1170)
+ java.base@17.0.3/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.3/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.3/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.3/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.3/java.lang.Thread.run(Thread.java:833)
+2022-09-13 22:33:01.896  WARN 11748 --- [RMI TCP Connection(1754)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [logback-2] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.3/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.3/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+ java.base@17.0.3/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
+ java.base@17.0.3/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3463)
+ java.base@17.0.3/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3434)
+ java.base@17.0.3/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1623)
+ java.base@17.0.3/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1170)
+ java.base@17.0.3/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.3/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.3/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.3/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.3/java.lang.Thread.run(Thread.java:833)
+2022-09-13 22:33:01.956  INFO 11748 --- [RMI TCP Connection(1754)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-09-13 22:33:02.017  INFO 11748 --- [RMI TCP Connection(1754)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-09-13 22:33:02.037  INFO 11748 --- [RMI TCP Connection(1754)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-09-13 22:34:48.286  INFO 17340 --- [restartedMain] c.c.f.FlightReservationSystemApplication : Starting FlightReservationSystemApplication using Java 17.0.3 on Maheshn-VD2 with PID 17340 (C:\Users\maheshn\Desktop\Team-04_JavaReact_MajorProject-Fight-Reservation\Backend\flight-reservation-system\target\classes started by maheshn in C:\Users\maheshn\Desktop\Team-04_JavaReact_MajorProject-Fight-Reservation\Backend\flight-reservation-system)
+2022-09-13 22:34:48.289  INFO 17340 --- [restartedMain] c.c.f.FlightReservationSystemApplication : No active profile set, falling back to 1 default profile: "default"
+2022-09-13 22:34:48.346  INFO 17340 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-09-13 22:34:48.347  INFO 17340 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-09-13 22:34:49.144  INFO 17340 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-09-13 22:34:49.240  INFO 17340 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 85 ms. Found 9 JPA repository interfaces.
+2022-09-13 22:34:49.871  INFO 17340 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8091 (http)
+2022-09-13 22:34:49.882  INFO 17340 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-09-13 22:34:49.883  INFO 17340 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-13 22:34:49.974  INFO 17340 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-09-13 22:34:49.974  INFO 17340 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1627 ms
+2022-09-13 22:34:50.138  INFO 17340 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-09-13 22:34:50.193  INFO 17340 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.10.Final
+2022-09-13 22:34:50.367  INFO 17340 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-09-13 22:34:50.629  INFO 17340 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-09-13 22:34:51.279  INFO 17340 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-09-13 22:34:51.296  INFO 17340 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-09-13 22:34:52.603  INFO 17340 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-09-13 22:34:52.614  INFO 17340 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-09-13 22:34:52.725  WARN 17340 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-09-13 22:34:53.557  WARN 17340 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: e99c7e3a-0953-4152-a86d-1586b49c8e30
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2022-09-13 22:34:53.662  INFO 17340 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@44e8d8c3, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7a238332, org.springframework.security.web.context.SecurityContextPersistenceFilter@56ec9cfa, org.springframework.security.web.header.HeaderWriterFilter@703f0b9d, org.springframework.security.web.authentication.logout.LogoutFilter@a364811, com.cybage.flight.config.CustomJwtAuthenticationFilter@43499721, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@41404bd6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@25da69c9, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@71119fbc, org.springframework.security.web.session.SessionManagementFilter@7d1ba757, org.springframework.security.web.access.ExceptionTranslationFilter@4c7e2310, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5b5390bf]
+2022-09-13 22:34:54.072  INFO 17340 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-09-13 22:34:54.119  INFO 17340 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8091 (http) with context path ''
+2022-09-13 22:34:54.132  INFO 17340 --- [restartedMain] c.c.f.FlightReservationSystemApplication : Started FlightReservationSystemApplication in 6.321 seconds (JVM running for 7.197)
+2022-09-13 22:37:37.938  INFO 17340 --- [http-nio-8091-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-09-13 22:37:37.938  INFO 17340 --- [http-nio-8091-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-09-13 22:37:37.945  INFO 17340 --- [http-nio-8091-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2022-09-13 22:37:38.644  WARN 17340 --- [http-nio-8091-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.cybage.flight.exception.EmailAlreadyExistException: Email Already Exist]
+2022-09-13 22:38:02.177  WARN 17340 --- [http-nio-8091-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.cybage.flight.exception.EmailAlreadyExistException: Email Already Exist]
+2022-09-13 22:38:14.488  WARN 17340 --- [http-nio-8091-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.cybage.flight.exception.AddressNotFound: Email Address Not Found]
+2022-09-13 22:39:28.468  WARN 17340 --- [http-nio-8091-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.cybage.flight.exception.InvalidCredentialsException: Invalid Credentials]
+2022-09-13 22:40:01.060  WARN 17340 --- [http-nio-8091-exec-10] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.cybage.flight.exception.WrongOtpException: Enter valid OTP ]
+2022-09-13 22:42:54.078  INFO 17340 --- [http-nio-8091-exec-2] c.c.flight.controllers.FlightController  : Filter Flight ByMorning  api  called
+2022-09-13 22:42:57.857  INFO 17340 --- [http-nio-8091-exec-7] c.c.flight.controllers.FlightController  : Filter Flight ByNoon  api  called
+2022-09-13 22:42:59.221  INFO 17340 --- [http-nio-8091-exec-4] c.c.flight.controllers.FlightController  :  Filter Flight ByEvening api  called
+2022-09-13 22:42:59.881  INFO 17340 --- [http-nio-8091-exec-10] c.c.flight.controllers.FlightController  :  FIlter Flight ByNight api  called
+2022-09-13 22:43:00.789  INFO 17340 --- [http-nio-8091-exec-2] c.c.flight.controllers.FlightController  : Flight sort by fare api  called
+2022-09-13 22:43:04.732  INFO 17340 --- [http-nio-8091-exec-5] c.c.flight.controllers.FlightController  : Flight by refundable fare  api  called
+2022-09-13 22:43:10.888  INFO 17340 --- [http-nio-8091-exec-4] c.c.flight.controllers.FlightController  : Filter Flight ByNoon  api  called
+2022-09-13 22:43:11.578  INFO 17340 --- [http-nio-8091-exec-9] c.c.flight.controllers.FlightController  :  Filter Flight ByEvening api  called
+2022-09-13 22:43:13.019  INFO 17340 --- [http-nio-8091-exec-10] c.c.flight.controllers.FlightController  :  FIlter Flight ByNight api  called
+2022-09-13 22:43:14.175  INFO 17340 --- [http-nio-8091-exec-1] c.c.flight.controllers.FlightController  : Flight sort by fare api  called
+2022-09-13 22:48:20.880  INFO 17340 --- [http-nio-8091-exec-3] com.cybage.flight.email.EmailService     : Booking Confirmation: Flight Number: Sk-205, 2022-09-13
+2022-09-13 22:48:20.881  INFO 17340 --- [http-nio-8091-exec-3] com.cybage.flight.email.EmailService     : maheshn@cybage.com
+2022-09-13 22:48:20.881  INFO 17340 --- [http-nio-8091-exec-3] com.cybage.flight.email.EmailService     : <p style='background-color: lemonchiffon;'>Dear Customer, Thanks for booking your Booking,Your Booking Details Are  indicated Below.<br/><b> Flight Booking Id:54<br/>Flight Name:Air-usa<br/> Flight Number:Sk-205<br/> Booking Amount: 25200.0<br/><h3>Flight Details :<h3/></b><p/><table border='1' style='background-color: lemonchiffon;' ><tr>
+    <th>Flight Number</th>
+    <th>Flight Name</th>
+    <th>Source</th>
+    <th>Destination</td>
+    <th>Departure Date</td>
+    <th>Departure Time</th>
+    <th>Arrival Time</th>
+    <th>Flight Class</th>
+</tr>
+<tr>
+    <td>Sk-205</td>
+    <td>Air-usa</td>
+    <td>solapur</td>
+    <td>kolkata</td>
+    <td>2022-10-19</td>
+    <td>10:02:01</td>
+    <td>10:02:01</td>
+    <td>Business</td>
+</table><hr/> <h3>Passenger Details :<h3/> <table border='1' style='background-color: lemonchiffon;'><tr>  <td>PRN Number</td>	 <td>First Name </td>  <td>Last Name</td>	 <td>Age</td>	  <td>Gender</td>	 <td>Seat Number</td></tr>
+<tr>
+    <td>79</td>
+    <td>Mahesh</td>
+    <td>Nagtilak</td>
+    <td>23</td>
+    <td>male</td>
+    <td>B-10</td>
+</tr></tr>
+<tr>
+    <td>80</td>
+    <td>nagesh</td>
+    <td>nagtilak</td>
+    <td>28</td>
+    <td>male</td>
+    <td>B-9</td>
+</tr></tr>
+<tr>
+    <td>81</td>
+    <td>viraj</td>
+    <td>ghodake</td>
+    <td>5</td>
+    <td>male</td>
+    <td>B-8</td>
+</tr></tr>
+<tr>
+    <td>Infant-passenger</td>
+    <td>shaurya</td>
+    <td>ghodake</td>
+    <td>2</td>
+    <td>male</td>
+    <td>No Seat</td>
+</tr></table>
+2022-09-13 22:51:13.574  INFO 17340 --- [http-nio-8091-exec-1] com.cybage.flight.email.EmailService     : Your Ticket has been Cancelled
+2022-09-13 22:51:13.575  INFO 17340 --- [http-nio-8091-exec-1] com.cybage.flight.email.EmailService     : maheshn@cybage.com
+2022-09-13 22:51:13.575  INFO 17340 --- [http-nio-8091-exec-1] com.cybage.flight.email.EmailService     : <table border='1' style='background-color: lemonchiffon;'><th>Flight Number</th>
+    <th>Flight Name</th>
+    <th>Source</th>
+    <th>Destination</td>
+    <th>Departure Date</td>
+    <th>Departure Time</th>
+    <th>Arrival Time</th>
+    <th>Flight Class</th>
+</tr>
+<tr>
+    <td>Sk-205</td>
+    <td>Air-usa</td>
+    <td>solapur</td>
+    <td>kolkata</td>
+    <td>2022-10-19</td>
+    <td>10:02:01</td>
+    <td>10:02:01</td>
+    <td>Business</td>
+</table><h3>Passenger Details :<h3/> <table border='1' style='background-color: lemonchiffon;'><tr>  <td>PRN Number</td>	 <td>First Name </td>  <td>Last Name</td>	 <td>Age</td>	  <td>Gender</td>	 <td>Seat Number</td>	 <td>Status</td></tr>
+<tr>
+    <td>80</td>
+    <td>nagesh</td>
+    <td>nagtilak</td>
+    <td>28</td>
+    <td>male</td>
+    <td>B-9</td>
+	 <td><b>Cancelled<b/></td></tr></table><br/>Your refundable amount will be be credited in your account shortly..!!<br/> Feel Free to connect with us for any Query <br/>Admin<br/>Mahesh Nagtilak
+2022-09-13 22:53:52.522  INFO 17340 --- [http-nio-8091-exec-1] com.cybage.flight.email.EmailService     : Booking Confirmation: Flight Number: Sk-205, 2022-09-13
+2022-09-13 22:53:52.522  INFO 17340 --- [http-nio-8091-exec-1] com.cybage.flight.email.EmailService     : maheshn@cybage.com
+2022-09-13 22:53:52.523  INFO 17340 --- [http-nio-8091-exec-1] com.cybage.flight.email.EmailService     : <p style='background-color: lemonchiffon;'>Dear Customer, Thanks for booking your Booking,Your Booking Details Are  indicated Below.<br/><b> Flight Booking Id:55<br/>Flight Name:Air-usa<br/> Flight Number:Sk-205<br/> Booking Amount: 6396.0<br/><h3>Flight Details :<h3/></b><p/><table border='1' style='background-color: lemonchiffon;' ><tr>
+    <th>Flight Number</th>
+    <th>Flight Name</th>
+    <th>Source</th>
+    <th>Destination</td>
+    <th>Departure Date</td>
+    <th>Departure Time</th>
+    <th>Arrival Time</th>
+    <th>Flight Class</th>
+</tr>
+<tr>
+    <td>Sk-205</td>
+    <td>Air-usa</td>
+    <td>solapur</td>
+    <td>kolkata</td>
+    <td>2022-10-19</td>
+    <td>10:02:01</td>
+    <td>10:02:01</td>
+    <td>Business</td>
+</table><hr/> <h3>Passenger Details :<h3/> <table border='1' style='background-color: lemonchiffon;'><tr>  <td>PRN Number</td>	 <td>First Name </td>  <td>Last Name</td>	 <td>Age</td>	  <td>Gender</td>	 <td>Seat Number</td></tr>
+<tr>
+    <td>82</td>
+    <td>Mahesh</td>
+    <td>Nagtilak</td>
+    <td>66</td>
+    <td>male</td>
+    <td>B-9</td>
+</tr></table>
